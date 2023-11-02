@@ -1,0 +1,20 @@
+services:
+  mysql:
+    container_name: mysql-container
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=sms
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - 3307:3306
+    networks:
+      - db
+    volumes:
+      - mysql:/var/lib/mysql
+
+networks:
+  db:
+    driver: bridge
+
+volumes:
+  mysql:
