@@ -4,4 +4,4 @@ Spring Boot FullStack project of Management System + Login System using
  - Spring Security 
  - Thymeleaf 
  - Hibernate 
- - PHPMyAdmin
+ - Mysql
